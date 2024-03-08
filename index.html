@@ -1,0 +1,138 @@
+<DOCTYPE Html5>
+    <html>
+<head>
+<title>Assignment-5-home</title>
+
+</head>
+<body>
+    <style>
+        img.svg-banner {
+          width: 100%;
+          height: 300px;
+        }
+      </style>
+    
+      <img src="resources/favicon.svg" alt="SVG Banner" class="svg-banner">
+       <nav class = "menue">
+        <ul>
+        <li><a href="index.html">Home Page</a>  </li>
+        <li><a href="views/two.html">Page two  </a></li>
+        <li><a href="views/three.html">Page three</a>  </li>
+
+        </ul>
+       </nav>
+       <h1> Assignment 5</h1>
+       <h2 class="css-question">
+        How to apply CSS to HTML
+       </h2>
+       <p class = "css-question">
+        There are Three methods of applying CSS to an HTML file
+
+        <dl>
+          <dt> External Stylesheet</dt>
+          <dd> Using an external CSS file with a .css extension is a popular way to style web pages. By linking this file to multiple pages, you can apply the same styling across all of them, making it easy to manage and update your website's appearance. Example <br>
+            <pre><code>
+              /* styles.css */
+              body {
+                  font-family: Arial, sans-serif;
+                  background-color: #f0f0f0;
+              }
+              
+              h2 {
+                  color: blue;
+              }
+              </code></pre> 
+
+          
+          <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;External CSS Example&lt;/title&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h2&gt;Example Heading&lt;/h2&gt;
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+
+         </code></pre>
+
+
+          </dd>
+          <dt> Internal Stylesheet</dt>
+          <dd> We can also use an internal stylesheet which is made within the stm document, lik the name implaies and intenal stylesheet you place CSS inside a &lt;style&gt; element in the html &lt;head&gt; </dd>
+          <pre>
+            <code>
+              &lt;!DOCTYPE html&gt;
+              &lt;html lang="en-GB"&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8" /&gt;
+                  &lt;title&gt;My CSS experiment&lt;/title&gt;
+                  &lt;style&gt;
+                    h1 {
+                      color: blue;
+                      background-color: yellow;
+                      border: 1px solid black;
+                    }
+      
+                    p {
+                      color: red;
+                    }
+                  &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;Hello World!&lt;/h1&gt;
+                  &lt;p&gt;This is my first CSS example&lt;/p&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+          <dt> Inline Styles</dt>
+          <dd>Inline styles in html affects a single element in HTML, this shoudl be contained wintin a style element. An Example might be:\
+            <pre>
+              <code>
+                &lt;!doctype html&gt;
+                &lt;html lang="en-GB"&gt;
+                  &lt;head&gt;
+                    &lt;meta charset="utf-8" /&gt;
+                    &lt;title&gt;My CSS experiment&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1 style="color: blue; background-color: yellow; border: 1px solid black;"&gt;
+                      Hello World!
+                    &lt;/h1&gt;
+                    &lt;p style="color: red;"&gt;This is my first CSS example&lt;/p&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+              </code>
+            </pre>
+          </dd>
+
+        </dl>
+       </p>
+       <h2 class="js-question">Java Script in a Webpage</h2>
+       <p class = "js-question">JavaScript is a programminf language used to make webpages interactive, Its mostly to make a website visually appealing. There are two ways to call JavaScript code within HTML by using a script element.
+      <dl>
+        <dt>Linking an external script</dt>
+        <dd>usually scriprs are used in their own .js files. If you need to execute a .js script from a webpage, we can use &lt;script&gt; with a src attribute which points to the script file. For example:
+          <pre><code>&lt;script src="path/to/my/script.js"&gt;&lt;/script&gt;</code></pre> </dd>
+          <dt>Writing javascript within HTML</dt>
+          <dd>it is similar to linking a script but instead of creating a src file you can just add JavaScript code witing a &lt;script&gt; attribute. For example:
+          <pre><code>
+            &lt;script&gt;
+            window.addEventListener("load", () => {
+              console.log("This function is executed once the page is fully loaded");
+            });
+          &lt;/script&gt;
+          </code></pre>  
+          </dd> 
+      </dl> 
+      
+      </p>
+    </body>
+    </html>
